@@ -1,0 +1,160 @@
+/* Règles en commun : CSS menu et footer */
+
+.menu {
+    background-color: white;
+    margin-right: 5px;
+}
+
+li a {
+    color: grey;
+    margin-right: 2px;
+}
+
+ul  {
+    list-style : none;
+    margin-top: 5px;
+    }
+
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+li {
+    display: inline;
+
+}
+
+    h1 {
+        text-align: center;
+    }
+  
+    .ensemblehautdepage
+    {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 28px;
+    }
+
+    footer {
+ 
+        padding: 3px;
+        padding-top: 16px;
+        background-color: #DCDCDC;
+        color: #fff;
+        text-align: center;
+    }
+
+
+    div.bordure {
+      border-bottom:7px solid #75c13c;
+      width: 5%;
+      border-radius: 30px;
+      }
+
+    @media screen and (min-width: 300px) {
+      .description2 {
+        margin-left:-40px ;
+     
+      }
+      
+    }
+    
+    @media screen and (min-width: 300px) {
+      .angers {
+    width: 35%;
+      }
+      
+    }
+    
+    @media screen and (min-width: 300px) {
+      .angerspont {
+    width: 35%;
+      }
+      
+    }
+    
+    
+
+    
+    
+    /*
+
+    @media screen and (max-width: 600px) {
+        nav {
+            font-size: 0.9em;
+           
+         }
+       }
+      
+       @media screen and (max-width: 600px) {
+        ul :hover {
+           background-color: wheat;
+         }
+       }
+      
+       @media screen and (max-width: 600px) and (max-width: 768px) {
+        .slideshow {
+          display: contents;
+         }
+       }
+
+       @media screen and (max-width: 768px) {
+        .slideshow {
+          display: none;
+         }
+       }
+      
+       @media screen and (max-width: 600px) {
+        h1 {
+      background-color: rgb(214, 214, 214);
+      color: white;
+      filter: opacity(60%);
+      
+         }
+       }
+      
+       @media screen and (max-width: 600px) {
+        .sommaire {
+      text-align: center;
+         }
+       }
+      
+       @media screen and (max-width: 600px) and (min-width: 600px) {
+        .imageshaut {
+          width: 100%;
+          height: auto;
+         }
+       }
+
+       @media screen and (max-width: 768px) {
+        .texte_centrer {
+            background-color: black;
+            opacity: 0.40;
+            text-align: center;
+            top: 45%;
+         }
+       }
+
+       @media screen and (max-width: 600px) and (min-width: 600px) {
+        p {
+            text-align: justify;
+         }
+       }
+      
+       @media screen and (max-width: 600px) {
+        .ensemble1 {
+          flex-direction: column;
+          width: 300%;          
+         }
+       }
+
+       */
+       
+
+
+  

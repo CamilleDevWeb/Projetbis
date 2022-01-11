@@ -1,0 +1,109 @@
+/* 3 pages HTML */
+.imagehaut
+{
+    text-align: center;
+}
+
+html {
+  margin: auto;
+  padding: 0;
+}
+
+
+
+h5{
+    color: #75c13c;
+    text-align: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  .imagehaut {
+    position: relative;
+    text-align: center;
+    filter: brightness(60%);
+  }
+  
+  .texte_centrer {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #75c13c;
+
+  }
+
+  .description1 
+{
+  margin-top: 20px;
+  width: 35%;
+}
+
+.description2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 35%;
+}
+
+.ensemble1 {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.boite {
+  width:100% ;
+  height: 500px;
+}
+
+.angerspont {
+  margin-top: 26px;
+  margin-left: 20px;
+}
+
+.angers {
+  margin-top: 26px;
+  margin-left: 20px;
+}
+
+#tableau {
+  margin-top: 60px;
+}
+
+footer {
+ 
+  padding: 3px;
+  padding-top: 16px;
+  margin-top: 20px;
+  background-color: #DCDCDC;
+  color: #fff;
+  text-align: center;
+}
+
+.nantesbiodiversite {
+  margin-top: 20px;
+}
+
+.slideshowbox {
+  width: 100%;
+  height: 50%;
+}
+
+.slideshow {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

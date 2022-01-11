@@ -1,0 +1,148 @@
+/* page d'accueil */
+
+.menu {
+    background-color: white;
+    margin-right: 5px
+}
+
+li a {
+    color: grey;
+    margin-right: 2px;
+    
+}
+
+ul  {
+    list-style : none;
+    margin-top: 5px;
+    }
+
+li {
+    display: inline;
+
+}
+
+.ensemblehautdepage
+{
+    display: flex;
+}
+
+.logo {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+        text-align: center;
+    }
+  
+nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 28px;
+    }
+
+li {
+    text-align: center;
+}
+
+.motengras {
+   font-weight: bold; 
+}
+
+#villedurable {
+    color: #75c13c;
+}
+#criteres {
+    color: #75c13c;
+}
+
+#top {
+    color: #75c13c;
+    margin-top: 32px;
+}
+
+.partiegauche2{
+    width: 168%;
+}
+
+footer {
+ 
+    padding: 3px;
+    padding-top: 16px;
+    background-color: #DCDCDC;
+    color: #fff;
+    text-align: center;
+}
+
+.slideshowbox {
+    width: 100%;
+    height: 50%;
+}
+
+.ensemblebas {
+    display: flex;
+}
+
+.slideshow {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#lirelasuite {
+    display:none;
+  }
+
+
+.gestesecoresponsables {
+  
+    display: flex;
+ 
+}
+
+hr.new4 {
+    border: 1px solid grey;
+    width: 4%;
+  }
+
+.asterisk {
+    color: green;
+    margin-bottom: 10px;
+    height: 30%;
+}
+
+.blocdecouleur {
+    background-color: rgb(184, 214, 184);
+    height: 173px;
+    padding-top: 58px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.6em;
+    color: white;
+    width: 16%;
+
+}
+
+.blocdecouleur2 {
+    background-color: rgb(240, 235, 235);
+    height: 173px;
+    padding-left: 10px;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.blocs {
+    display: flex;
+}
+
+.check {
+    position: absolute;
+    color: white;
+    margin-left: 54px;
+     margin-top: 26px;
+     width: 2%;
+    height: 29px;
+}
+

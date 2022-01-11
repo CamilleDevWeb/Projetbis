@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Dessin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<header>
+  <style>
+  table,td,th {border-style :solid}
+  </style>
+  </header>
+
+<body>
+  <h3>Exercice 1</h3>
+  <p>Ecrivez le code HTML permettant de réaliser la page représentée sur la figure ci-dessous. 
+    L'image correspond à un fichier nommé dessin.png. Elle se trouve dans le sous répertoire images qui est au 
+    même niveau que la page html).</p>
+  <header><img src="dessin.png" alt="dessinmaison"></header>
+  <p>Un beau texte avec une image. L'image s'appelle "dessin.png" et se trouve dans le dossier "images".Celui-ci est située au même endroit que la page à écrire</p>
+  <h1>Première partie</h1>
+  <p>On vous demande ici</p>
+  <ul>
+    <li>D'écrire le code xtml strict qui correspon à cette page</li>
+    <li>On n'utilisera pas ici de feuille de style.</li>
+  </ul>
+  <h1>Seconde partie</h1>
+  <p>Voir exo 2</p>
+  <h1>Jouons avec les lites imbriquées</h1>
+
+<!-- liste -->
+  <ol>
+    <li>Ceci est le premier élément numéroté</li>
+    <li>Ceci est le second élement numéroté</li>
+    <ul>
+      <li>Ceci est le premier sous-élement du deuxième élement numéroté</li>
+      <ol>
+        <li>Et ceci est un autre sous-élement du deuxième élement numéroté</li>
+        <li>Et ceci est un autre sous-élement numéroté du même sous-élement</li>
+        <li>Vous suivez toujours ?</li>
+      </ol>
+      <li>Ceci est le deuxième sous-élement du deuxième élement numéroté</li>
+      <li>Ceci est le troisème sous-élement du deuxième élement numéroté</li>
+    </ul>
+
+    <li>Ceci est le troisème élement numéroté qui contient deux définition <br>facile</li>
+    qui n'est pas facile<br>
+    difficile<br>
+    synonyme de compliqué
+  </ol>
+<h3>Exercice 2</h3>
+<p>Même question pour la page suivante</p>
+
+<!-- Tableau -->
+<h2>Exo2</h2>
+<p>Créez cette jolie table :</p>
+<table style="width : 100%">
+<caption>Conjugaisons</caption>
+
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2" align="center"></th>
+    <td colspan="2" align="center">Premier groupe</td>
+    <td colspan="3" align="center">Deuxième groupe</td>
+  </tr>
+ 
+  <tr>
+    <th></th>
+    <th>Personne</th>
+    <th>Singulier</th>
+    <th>Pluriel</th>
+    <th>Singulier</th>
+    <th>Pluriel</th>
+  </tr>
+
+  <tr>
+    <TD width=2% rowspan=3>présent</TD>
+    <td>1</td>
+    <td>je mange</td>
+    <td>nous mangeons</td>
+    <td>je finis</td>
+    <td>nous finissons</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>tu manges</td>
+    <td>vous mangez</td>
+    <td>tu finis</td>
+    <td>vous finissez</td>
+  </tr>
+
+  <tr> 
+    <td>3</td>
+    <td>il mange</td>
+    <td>ils mangent</td>
+    <td>il finit</td>
+    <td>vils finissent</td>
+  </tr>
+
+</table>
+
+<h3>Exercice 3</h3>
+<p>Un site Web fournit les informations présentées ci-dessous de façons non structurées. 
+  En utilisant les classes, les id et les balises générique div et span, écrire un code HTML permettant de structurer 
+  ces données avec un maximum d'informations sémantiques</p>
+
+  <div class="titre">
+  <h3>Les livres du mois</h3>
+  </div>
+
+<div class="soustitre">
+  <p><b>Les misérables (Victor Hugo)</b></p>
+</div>
+
+<div class="contenutexte">
+<p> 100 sous <br>
+Ça chauffe salement pour Jean Valjean. A peine libéré, saura-t-il échapper _a l'infâme Javert ? <br>
+<b>DarkLordOfAcademia</b>: ben, ils meurent tous les deux _a la _n <br>
+<b>Guy de M:</b>c'est pas très émoustillant.<br>
+<b>Charles B.</b> : le Totor, je le préfère en poète.
+</p>
+
+</div>
+
+  <div class="soustitre">
+    <p><b>Les fleurs du mal (Charles Baudelaire)</b></p>
+  </div>
+
+  <div class="contenutexte">
+  <p>
+    120 sous <br>
+    Une suite de poèmes sur la femme, le vin, la révolte, la mort et quelques autres. <br>
+   Louis N. B. : outrage indigne à la morale publique, aussi scandaleux pour la morale que les 
+    misérables l'est en politique. <br>
+    Victor H. : pas mal pour un petit jeune.<br>
+    Guy de M. : je préférais le titre d'origine
+  </p>
+</div>
+  </body>

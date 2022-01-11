@@ -1,0 +1,300 @@
+
+@import 'partials/variables';
+@mixin btn()
+{
+	color: $light;
+	background-color: $darkGrey;
+	width:1% ;
+	font-family: $grandHotel;
+	padding:1px ;
+	border: 0;
+}
+
+/*************HEADER**************/
+header
+{
+	background-color: $darkGrey;
+	padding:2%;
+	text-align: center;
+	h1
+	{
+		font-family: $grandHotel;
+		color: $yellow;
+		margin: 0;
+	}
+
+	p
+	{
+		color: $light;
+	}
+}
+
+#search
+{
+	display: block;
+	margin: 0 auto;
+}
+
+aside
+{
+	background-color: $darkGrey;
+}
+
+nav
+{
+	ul
+	{
+		list-style-type: none;
+		padding:0;
+		margin: 0;
+		li
+		{
+			text-align: center;
+			border-bottom: $yellow 2px solid;
+			width: 50%;
+			margin: 0 auto;
+			padding-bottom: 2%;
+			margin-bottom: 2%;
+			&:last-child
+			{
+				border-bottom: 0;
+			}
+
+			a
+			{
+				color:$silver;
+				font-family: $openSans;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/*************COPYRIGHT**************/
+/*************COPYRIGHT**************/
+.copyright
+{
+	color: yellow;
+	visibility: hidden;
+	margin: 0;
+}
+
+/*************SECTIONS**************/
+section
+{
+	padding-bottom: 8%;
+}
+
+/* section limonade*/
+.limonade
+{
+	background-image: url(../images/bg-presentation.jpg);
+	background-size: cover;
+	color: $light;
+	padding: 2%;
+	h1
+	{
+		font-family: $grandHotel;
+	}
+
+	p
+	{
+		font-family: $openSans;
+	}
+
+	blockquote
+	{
+		text-align: right;
+		margin-left: 10%;
+		margin-right: 5%;
+       
+    .blockquote {
+        font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    }
+
+		.quote
+		{
+			font-size: 1.2em;
+			font-family: $openSans;
+			font-style: italic;
+		}
+
+		.mag
+		{
+			font-family: $grandHotel;
+		}
+	}
+
+}
+
+/* nos produits phares*/
+h1
+{
+	font-family: $grandHotel;
+	@media screen and (min-width:768px)
+	{
+		font-size: 2.3em;
+		margin-left: 27px;
+	}
+}
+
+h2
+{
+	font-family: $grandHotel;
+    text-align: center;
+}
+
+.cards p {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+
+.produits
+{
+	background-color: $silver;
+	figure
+	{
+		background-color: $light;
+	}
+}
+
+/* nos circuits de production*/
+.production
+{
+	background-image: url(../images/bg-production.jpg);
+	background-size: cover;
+	color: $light;
+	h1
+	{
+		text-align: right;
+		padding-top: 13px;
+		margin-right: 12px;
+	}
+
+	p
+	{
+		text-align: right;
+		margin-right: 12px;
+        font-family: "Open Sans",Helvetica,Arial,sans-serif;
+	}
+
+    .cards figcaption {
+        font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    }
+}
+
+/* clients*/
+.client
+{
+	@extend .produits;
+}
+
+/* Message*/
+.contact
+{
+	background-image: url(../images/bg-contact.jpg);
+	background-size: cover;
+	color: $light;
+	padding: 2%;
+	p
+	{
+		font-family: $openSans;
+		display: flex;
+		flex-direction: column;
+		input[type=email], textarea
+		{
+			margin-top: 2%;
+			opacity: 0.7;
+			border: 0;
+		}
+	}
+}
+
+/* mixin bouton */
+.more
+{
+@include btn()}
+
+.production .more
+{
+	background-color: $lightYellow;
+	color: $darkGrey;
+}
+
+.production .more
+{
+	background-color: $lightYellow;
+	color: $darkGrey;
+}
+
+.btn-submit
+{
+	background-color: $lightYellow;
+	color: $darkGrey;
+	font-family: $grandHotel;
+	border: 0;
+}
+
+/* @media screen and (min-width: 375px)
+{
+	.produits  img, .client  img, .production  img {
+        width: 100%;
+    }
+} 
+*/
+
+
+    
+@media screen and (min-width: 375px)
+{
+	.produits .more, .client .more, .production .more
+	{
+		float: right;
+		font-size: 19px;
+		width: 40%;
+		height: 20px;
+		padding: 3px;
+		margin-right: 8px;
+	}
+
+	@media screen and (min-width: 375px)
+	{
+		h1
+		{
+			margin: 0;
+		}
+	}
+}
+
+/* version tablette */
+@media screen and (min-width: 768px)
+{
+	.produits .more, .client .more, .production .more
+	{
+		width: 30%;
+		padding: 2%;
+		float: right;
+		font-size: 24px;
+	}
+
+	@media screen and (min-width:768px)
+	{
+		.cards
+		{
+			display: flex;
+		}
+
+		h1
+		{
+			margin: 0;
+			padding-top: 9px;
+		}
+	}
+
+	@media screen and (min-width:768px)
+	{
+		.limonade
+		{
+			text-align: end;
+		}
+	}
+}

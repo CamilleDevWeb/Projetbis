@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+<meta name="description" content="Ma page de formulaire"/>
+<title>Formulaire</title>
+<link rel="stylesheet" href="formulaire.css">
+<script type="script.js"></script>
+<link rel="stylesheet" href="style.css" rel="stylesheet">
+</head>
+<body>
+ 
+<h1>Nous lancons une grande enquête sur les anciens stagiaires</h1>
+<h2> merci de répondre au questionnaire</h2>
+
+<form action="/formulairedecontact" method="post">
+    <div>
+        <input type="text" id="firstname" name="user_name"><label for="firstname">Votre nom</label> 
+    </div>
+
+    <div>
+        <input type="text" id="name" name="user_name"><label for="name">Votre prénom</label>
+    </div>
+
+    <div>
+        <input type="text" id="datenaissance" name="user_name"> <label for="datenaissance">Votre date de naissance</label>
+    </div>
+
+    <div>
+        <input type="text" id="adresse" name="user_name"><label for="adresse">Votre adresse</label>
+    </div>
+
+    <div>
+        <input type="text" id="ville" name="user_name"> <label for="ville">Votre votre ville</label>
+    </div>
+
+<div>
+    <input type="text" id="codepostal" name="user_name"><label for="codepostal">Votre code postal</label>
+</div>
+
+<div>
+    <input type="email" id="email" pattern="contact@apfa.fr" ><label for="email">Votre e-mail</label>
+</div>
+
+
+      <p>Vous êtes ?</p>
+
+    <div class="container">
+
+        <div class="partie1">
+         <input type="radio" id="sexehomme" name="drone" value="huey" checked>  <label for="huey">Homme</label>
+        </div>
+
+        <div class="partie2">
+         <input type="radio" id="sexefemme" name="drone" value="dewey"><label for="dewey">Femme</label>
+        </div>
+    </div>
+    
+    <label for="job-select">Votre métier : </label>
+    <select name="job" id="job-select">
+        <option value="">Merci de selectionner une option</option>
+        <option value="dev">Developpeur</option>
+        <option value="analyste">Analyste</option>
+        <option value="chefdeprojet">Chef de projet</option>
+        <option value="autre">Autre</option>
+    </select>
+
+    <div class="container2">
+        <div class="partiegauche">
+        <input type="text" id="autre" name="autre"> 
+        </div>
+
+        <div class="partiedroite">
+        <p>Si vous avez répondu autre, précisez </p>
+        </div>
+    </div>
+
+<select id="monselect">
+    <option value="valeur1">inférieur à 1000€</option>
+    <option value="valeur2" selected>entre 1000€ et 1500€</option>
+    <option value="valeur3">entre 1500€ et 2000€</option>
+    <option value="valeur3">2000€ et plus</option>
+  </select>
+    
+    <div>
+        <input type="text" id="anneeformation" name="user_name"><label for="anneeformation"> En quelle année avez-vous suivi le stage AFPA ? </label> 
+    </div> <br>
+
+    <textarea cols="35" rows="5" wrap="hard" readonly="yes">Vos commentaires : "consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</textarea>
+</form>
+
+<h3>Merci d'avoir répondu au questionnaire</h3>
+
+<input type="submit" value="validez">
+<input type="reset" value="annulez">
+
+
+</body>
+</html>

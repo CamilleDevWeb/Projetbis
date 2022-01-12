@@ -1,0 +1,34 @@
+VARIABLES
+	
+	nombre EST_DU_TYPE NOMBRE //20 nombres
+	nombreleplusgrand EST_DU_TYPE NOMBRE
+	i EST_DU_TYPE NOMBRE
+	iplusgrand EST_DU_TYPE NOMBRE
+	temp EST_DU_TYPE NOMBRE
+	
+	
+DEBUT_ALGORITHME
+	
+	POUR i ALLANT_DE 1 A 3
+		DEBUT_POUR
+		
+		temp PREND_LA_VALEUR nombre
+		AFFICHER* "nombre"
+		LIRE nombre
+		
+		
+		SI (nombre>temp) ALORS
+			DEBUT_SI
+			
+			nombreleplusgrand PREND_LA_VALEUR nombre
+			iplusgrand PREND_LA_VALEUR i
+			
+			
+			FIN_SI
+		
+		FIN_POUR
+
+	AFFICHER* nombreleplusgrand
+	AFFICHER* iplusgrand
+	
+FIN_ALGORITHME

@@ -1,0 +1,25 @@
+VARIABLES
+	
+	nombrededepart EST_DU_TYPE NOMBRE // 5
+	i EST_DU_TYPE NOMBRE // 1 à 5
+	somme EST_DU_TYPE NOMBRE
+	
+	
+DEBUT_ALGORITHME
+	
+	AFFICHER "entrez un nombre"
+	LIRE nombrededepart
+	
+	POUR i ALLANT_DE 1 A nombrededepart
+		DEBUT_POUR
+		
+	somme PREND_LA_VALEUR somme+i 
+	
+	AFFICHER* i 
+		
+		
+		FIN_POUR
+	
+		AFFICHER* somme
+	
+FIN_ALGORITHME

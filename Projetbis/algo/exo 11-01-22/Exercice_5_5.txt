@@ -1,0 +1,19 @@
+VARIABLES
+	nbrdepart EST_DU_TYPE NOMBRE // 7
+	i EST_DU_TYPE NOMBRE // 1 à 10
+	
+DEBUT_ALGORITHME
+	
+	AFFICHER* "nombre de départ"
+	LIRE nbrdepart
+	
+	
+	POUR i ALLANT_DE 1 A 10
+		DEBUT_POUR
+		
+	AFFICHER nbrdepart + "x" + i + "=" + nbrdepart*i
+	
+	FIN_POUR
+	
+	
+FIN_ALGORITHME

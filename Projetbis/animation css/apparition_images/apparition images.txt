@@ -1,0 +1,34 @@
+body {
+    display:flex;
+    justify-content:space-between;
+}
+
+
+@keyframes mymove { /*direction gauche vers droite*/
+  from {left: -1000px;}
+  to {left: 0px;}
+  70% {transform: rotate(360deg);}
+}
+
+
+.gris {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation: mymove 5s; /* absent 5 secondes, il met 5 secondes se positionner*/
+}
+
+.deuxmilieu {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation:  mymove 7s ;   /* 7s : animation-duration*/
+ 
+}
+
+.chien1 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation: mymove 10s; 
+}

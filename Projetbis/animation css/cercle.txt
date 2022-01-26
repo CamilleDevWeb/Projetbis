@@ -1,0 +1,36 @@
+<div id="cercle"></div>
+
+<div id="cerclebis"></div>
+
+
+////
+
+@keyframes lecercle {
+ 0% { left: 0px; top: 0px;}
+ 50% { left: 500px; top: 100; }
+ 100%{left: 100px; top: 0px;}
+ }
+
+ 
+ #cercle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 20px;
+    background: green;
+    animation-name: lecercle;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+ #cerclebis {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 20px;
+    background: blue;
+    animation-name: lecercle;
+    animation-duration: 5s;
+    margin-top: 5px;
+}
+

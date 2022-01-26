@@ -1,0 +1,25 @@
+
+
+.slides{
+  display: flex;
+  position: relative;
+
+}
+
+img {
+  width:800px;
+  position: absolute;
+}
+
+.active {
+  opacity: 1;
+}
+
+/*img:nth-child(3){
+  opacity: 0;
+}*/
+
+
+
+
+

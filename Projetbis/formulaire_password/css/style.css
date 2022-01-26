@@ -1,0 +1,58 @@
+.container {
+    background-color: rgb(218, 201, 201);
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#name {
+    width: 500px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: white;
+}
+
+#firstname {
+    width: 500px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: white;
+}
+
+#pass {
+    width: 500px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: white;
+}
+
+#mail {
+    margin-top: 0.5%;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: white;
+}
+
+#confirm_password {
+    width: 500px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: white;
+}
+
+
+#sendbutton {
+    background-color: #c0a0d3;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+

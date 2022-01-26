@@ -1,0 +1,58 @@
+div {
+    display:flex;
+    justify-content:space-between;
+}
+
+
+@keyframes mymove1 { /*direction gauche vers droite*/
+  from {top : 0; left: -1000px;}
+  to {left: 0px; transform: rotate(360deg);}  /*rotation des images*/
+
+}
+
+@keyframes mymove2 { /*direction gauche vers droite*/
+  from {top : 0;left: -1000px;}
+  to {left: 100px; transform: rotate(360deg);}  /*rotation des images*/
+
+}
+
+@keyframes mymove3 { /*direction gauche vers droite*/
+  from {top : 0; left: -1000px;}
+  to {left: 200px; transform: rotate(360deg);}  /*rotation des images*/
+
+}
+
+
+.gris {
+  width: 200px;
+  height: 200px;
+  left:-1000px;
+  position: relative;
+  animation-name: mymove1 ; /* absent 5 secondes, il met 5 secondes se positionner*/
+  animation-duration: 5s; 
+  animation-fill-mode : forwards;
+  
+}
+
+.deuxmilieu {
+  width: 200px;
+  height: 200px;
+  left:-1000px;
+  position: relative;
+  animation-name:  mymove2  ;   /* 7s : le temps de son animation*/
+  animation-duration:3s;
+  animation-delay: 5s;
+  animation-fill-mode : forwards;
+}
+
+.chien1 {
+  width: 200px;
+  height: 200px;
+  left:-1000px;
+  position: relative;
+  animation-name:  mymove3  ;   /* 7s : le temps de son animation*/
+  animation-duration:5s;
+  animation-delay: 5s;
+  animation-fill-mode : forwards;
+  
+}

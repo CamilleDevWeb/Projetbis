@@ -61,44 +61,128 @@ nav ul {
     color:#514D1A;
 }
 
+
 /*-------SLIDES-------*/
+    .slide1 {
+        width: 100%;
+    }
+    .slide2 {
+        width: 100%;
+    }
+    .slide3 {
+        width: 100%;
+    }
 
-.slides{
-    padding-top: 65px;
-}
+/*-------Offres du moment-------*/
 
-.slide1 {
-    width: 100%;
- 
-}
-
-.slide2 {
-    width: 100%;
-    
-}
-
-.slide3 {
-    width: 100%;
-
+.fond {
+    background-color: #E3DFD9;
 }
 
 .button {
     background-color: #789264;
     border: none;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
+    padding: 14px 49px 15px 39px;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
+    margin-left: 30%;
+    margin-bottom: 20px;
   }
-
-  /*-------SLIDES-------*/
 
   p{
       font-family: 'Waseem';
       font-size: 2em;
       text-align: center;
+      color: #789264;
+      padding-top: 19px;
     }
+
+    .texteoffre {
+        margin-top: 6px;
+    }
+
+    /*-------idees et conseils-------*/
+
+    .ensemble {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image : url("media/conseils.jpg");
+        opacity:0.75;
+    }
+
+    .conseils {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .ideesconseilstexte {
+        z-index: 1;
+    }
+
+    #sous-texte {
+        color: #514D1A;
+        font-weight: bold;
+    }
+
+    .buttonsavoirplus {
+        background-color: #789264;
+        border: none;
+        color: white;
+        padding: 14px 34px 15px 37px;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 33px;
+        margin-bottom: 20px;
+        opacity: 1 !important;
+    }
+
+    /*-------les 3 derniers articles-------*/
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+        font-family: arial;
+        margin-bottom: 20px;
+      }
+
+      h1{
+          color: #E3DFD9;
+          font-size: 20px;
+      }
+      
+      .title {
+        color: #789264;
+        font-size: 18px;
+     
+      }
+
+      .contenu_rubrique_ala1 {
+          font-size: 1em;
+          color: black;
+          margin-top: -21px;
+          font-family: "system-ui";
+          font-size: 14px;
+      }
+      
+      button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #789264;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+      }
+      
+
+      button:hover, a:hover {
+        opacity: 0.7;
+      }
+    

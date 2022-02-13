@@ -11,7 +11,21 @@
 </head>
 <body>
 
+  <!-- before header-->
+  <div class="beforeheader">
+    <p class="newsletter"><i class="fas fa-envelope"></i>s'inscrire à la newsletter</p>
+    <p class="moncompte"><i class="fas fa-user"></i>mon compte</p>
+
+  </div>
+
+    <!-- logo-->
+
+  <img class="logo" src="media/logo.png" alt="logodusite">
+
+    <!-- header-->
+
     <header>
+
         <div class="topnav">
             <div id="myLinks">
                 <a href="#">Accueil</a></li>
@@ -19,54 +33,80 @@
                 <a href="#">Outils</a></li>
                 <a href="#">Conseils</a></li>
             </div>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars bars"></i>
-            </a>
+            
+            <i class="fa fa-bars bars"></i>
 
           </div> 
-
-          <img class="logo" src="media/logo.png" alt="logodusite">
           
-          <div class="btnmenu">
-              <a class="search" href="#"> <i class="fas fa-search"></a></i>
-              <a class="compte" href="#"> <i class="far fa-user"></a></i>
+          <div class="searchbar">
+            <button type="submit"><i class="fas fa-search"></i></button>
+            <input type="text" placeholder="Mes recherches..." name="search">
+            
           </div>
+
+        
     </header>
-    
-    <!-- slides-->
-    <div class="slides">
-      <div class="slide-contenu">
-        <img class="slide1" src="media/slide1.jpg"alt="vendeur">
-        <img class="slide2" src="media/slide2.jpg"alt="boutique">
-        <img class="slide3" src="media/slide3.png"alt="outils">
+
+  <!-- slider-->
+    <div class="diapo">
+
+      <div class="elements">
+
+        <div class="element active">
+          <img class="slide1" src="media/slide1.jpg"alt="vendeur">
+          <div class="caption">
+            <p>Retrouvez des conseils de professionnel</p>
+          </div>
+        </div>
+
+        <div class="element">
+          <img class="slide1" src="media/slide2.jpg"alt="boutique">
+          <div class="caption">
+            <p>Une boutique à votre service</p>
+          </div>
+        </div>
+
+        <div class="element">
+          <img class="slide1" src="media/slide3.png"alt="outils">
+          <div class="caption">
+            <p>Des outils à tous les prix</p>
+          </div>
+        </div>
+
       </div>
+
+      <i id="nav-gauche" class="fa-solid fa-arrow-left"></i>
+      <i id="nav-droite" class="fa-solid fa-arrow-right"></i>
+    
+
     </div>
      
     
   <!-- Les offres du moment-->
     <div class="fond">
-      <p class="texteoffre">Les offres du moment</p>
+      <p class="titre_rubrique">Les offres du moment</p>
       <a href="#" class="button">Je découvre</a>
     </div>
     
   <!-- Idées et conseils-->
 <div class="ensemble">
   <div class="ideesconseilstexte">
-    <p id="sous-texte">Idées et conseils</p>
+    <p class="titre_rubrique">Idées et conseils</p>
     <a href="#" class="buttonsavoirplus">En savoir plus</a>
   </div>
 </div>
  
 
 <!-- Les trois derniers articles du blog-->
-<p> A la une</p>
+<p class="titre_rubrique">A la une</p>
 <div class="card">
   <img src="media/tomate.jpg" alt="John" style="width:100%">
   <h1>#Cultiverensemble</h1>
   <p class="title">Comment faire pousser des tomates ?</p>
   <p class="contenu_rubrique_ala1">Qui donc possède un potager sans aucun pied de tomate ? Il faut dire que ce légume est le chouchou de tous et que sa culture est des plus faciles...</p>
-  <button onclick="window.location.href = 'https://www.gammvert.fr/conseils/conseils-de-jardinage/comment-bien-faire-pousser-des-tomates';">Lire plus</button>
+  
+  <button><a href="https://www.gammvert.fr/conseils/conseils-de-jardinage/comment-bien-faire-pousser-des-tomates">Lire plus</a></button>
+
 </div>
 
 <div class="card">
@@ -74,7 +114,7 @@
   <h1>#Cultiverensemble</h1>
   <p class="title">10 choses à savoir sur les plantes d'intérieur</p>
   <p class="contenu_rubrique_ala1">Que vous soyez experts ou simples débutants, apporter les meilleurs soins à vos plantes d'intérieur vous tient à cœur. Vous trouverez ci-dessous 10 conseils pour vous aider à améliorer vos compétences...</p>
-  <button onclick="window.location.href = https://fr-fr.bakker.com/blogs/plantes-dinterieur/10-choses-que-vous-ne-saviez-pas-encore-sur-l-entretien-de-vos-plantes-d-interieur';">Lire plus</button>
+  <button><a href="https://fr-fr.bakker.com/blogs/plantes-dinterieur/10-choses-que-vous-ne-saviez-pas-encore-sur-l-entretien-de-vos-plantes-d-interieur">Lire plus</a></button>
 </div>
 
 <div class="card">
@@ -82,10 +122,17 @@
   <h1>#Cultiverensemble</h1>
   <p class="title">Entretenir ses plantes en hiver</p>
   <p class="contenu_rubrique_ala1">Il fait plus froid dehors et les feuilles jaunissent ? C'est signe que vous devez prendre soin de vos plantes d'intérieur aussi. Il est important de bien s'occuper des plantes d'intérieur en hiver, et de les choyer davantage....</p>
-  <button onclick="window.location.href = 'https://fr-fr.bakker.com/blogs/plantes-dinterieur/l-entretien-des-plantes-d-interieur-pendant-les-mois-d-hiver';">Lire plus</button>
+  <button><a href="https://fr-fr.bakker.com/blogs/plantes-dinterieur/l-entretien-des-plantes-d-interieur-pendant-les-mois-d-hiver">Lire plus</a></button>
 </div>
 
-
+<!-- footer -->
+<footer>
+  <a href="https://example.com">CGV</a>
+  <a href="https://example.com">Mentions légales</a>
+  <a href="https://example.com">Protection desdonnées</a>
+  <a href="https://example.com">Moyens de paiement</a>
+  <a href="https://example.com">Conditions de livraison</a>
+</footer>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

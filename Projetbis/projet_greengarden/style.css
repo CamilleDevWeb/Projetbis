@@ -5,14 +5,39 @@ body {
     padding: 0;
 }
 
+  /*-------before header-------*/
+
+.beforeheader{ 
+    display:flex;
+    margin-top: -13px;
+  }
+  
+  .newsletter, .moncompte {
+    background-color: #C56155;
+    height: 19px;
+    width: 320px;
+    font-size: 0.8em;
+    color: white;
+  }
+
+
+
+
+  /*-------LOGO-------*/
+
+.logo {
+    max-height: 60px;
+    margin-left: 38%;
+    margin-top: -7px;
+ }
+
 header{
 
-    position: fixed;
+    /*position: fixed;*/
     display: flex;
     left: 0;
     right: 0;
-    height: 66px;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
 }
 
@@ -22,7 +47,7 @@ a {
     text-decoration: none;
     color: #514D1A;
     font-family: 'Waseem';
-    padding: 8px;
+
 }
 
 nav ul { 
@@ -35,30 +60,25 @@ nav ul {
 }
 
 .bars{
-    margin-top: 23px;
+    margin-top: 28px;
+    margin-left: 19px;
+    font-size: 30px;
 }
 
-/*-------LOGO-------*/
 
-.logo {
-   max-height: 60px;
-   margin-bottom: 6px;
-}
 
 /*-------ICONES-------*/
 
-.btnmenu{
-    margin-top: 23px;
+.searchbar{
+    display: flex;
+    padding: 23px 0px 8px;
+    margin-right: 6px;
 }
 
 .search
 {
    color:#514D1A;
    margin-top: 24px;
-}
-.compte
-{
-    color:#514D1A;
 }
 
 
@@ -71,6 +91,47 @@ nav ul {
     }
     .slide3 {
         width: 100%;
+    }
+
+    .diapo {
+        position: relative;
+        overflow: hidden;
+    }
+
+    #nav-droite, #nav-gauche{
+        position: absolute;
+        top : 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 3em;
+    }
+
+    #nav-droite {
+        right: 20px;
+    }
+
+    #nav-gauche {
+        left: 20px;
+    }
+
+    .elements {
+        display: flex;
+        transition: 0.5s linear;
+    }
+
+    .element {
+        flex: 1 0 100%;
+        position: relative;
+    }
+
+    .caption {
+        position: absolute;
+        top :50%;
+        left: 50%;
+        transform :translate(-50%, -50%);
+        text-align: center;
+        background-color: #E3DFD9;
+        opacity: 0.5;
     }
 
 /*-------Offres du moment-------*/
@@ -91,18 +152,6 @@ nav ul {
     margin-bottom: 20px;
   }
 
-  p{
-      font-family: 'Waseem';
-      font-size: 2em;
-      text-align: center;
-      color: #789264;
-      padding-top: 19px;
-    }
-
-    .texteoffre {
-        margin-top: 6px;
-    }
-
     /*-------idees et conseils-------*/
 
     .ensemble {
@@ -122,10 +171,6 @@ nav ul {
         z-index: 1;
     }
 
-    #sous-texte {
-        color: #514D1A;
-        font-weight: bold;
-    }
 
     .buttonsavoirplus {
         background-color: #789264;
@@ -140,6 +185,7 @@ nav ul {
     }
 
     /*-------les 3 derniers articles-------*/
+
     .card {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         max-width: 300px;
@@ -153,17 +199,11 @@ nav ul {
           color: #E3DFD9;
           font-size: 20px;
       }
-      
-      .title {
-        color: #789264;
-        font-size: 18px;
      
-      }
 
       .contenu_rubrique_ala1 {
           font-size: 1em;
           color: black;
-          margin-top: -21px;
           font-family: "system-ui";
           font-size: 14px;
       }
@@ -185,4 +225,27 @@ nav ul {
       button:hover, a:hover {
         opacity: 0.7;
       }
+
+
+    /*-------Elements en commun -------*/
+      .titre_rubrique {
+        color: #514D1A;
+        font-weight: bold;
+        font-size: 1.7em;
+        text-align: center;
+        padding-top: 11px;
+    }
+        
+      
+      
+      /*-------footer-------*/
+
+      footer {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: #BABC69;
+        font-size: 6px;
+    }
+
     

@@ -64,7 +64,7 @@ nav ul {
 }
 
 #myLinks{
-    display: none;
+    visibility: hidden;
     padding-top: 10px;
 }
 
@@ -207,9 +207,9 @@ nav ul {
     /*-------idees et conseils-------*/
 
     .rubrique_idees_conseils {
-        display: flex;
         justify-content: center;
         background-image : url("media/conseils.jpg");
+        background-repeat: no-repeat;
         padding-bottom: 29px;
         padding-top: 51px;
     }
@@ -223,6 +223,7 @@ nav ul {
         cursor: pointer;
         margin-bottom: 20px;
         opacity: 1 !important;
+        margin-left: 79px;
     }
 
     /*-------les 3 derniers articles-------*/
@@ -232,10 +233,15 @@ nav ul {
         justify-content: center;
     }
 
+    
+    .icone_fleur{
+        width:20%;
+    }
+
     .card {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         max-width: 300px;
-        margin: auto;
+       /* margin: auto;*/
         text-align: center;
         font-family: "system-ui";
         margin-bottom: 20px;
@@ -272,6 +278,10 @@ nav ul {
         opacity: 0.7;
       }
 
+      .media_card {
+          width: 100%;
+      }
+
 
     /*-------Elements en commun -------*/
       .titre_rubrique {
@@ -292,8 +302,284 @@ nav ul {
         font-size: 6px;
         justify-content: space-evenly;
     }
-
-
-          /*-------media queries-------*/
-     
     
+
+    /*-------mediaqueries-------*/
+
+    
+/*Mobile*/
+
+    @media screen and (min-width :320px) and (max-width :425px)
+{
+    .card
+    {
+       margin: auto;
+       margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width :375px) and (max-width :420px)
+{
+    .logo
+    {
+        margin-left: 144px;
+    }
+    .button
+    {
+        margin-left:27%;
+    }
+    .buttonsavoirplus
+
+    {
+        margin-left:105px;
+    }
+}
+
+@media screen and (min-width :425px) and (max-width :600px)
+{
+    .logo
+    {
+        margin-left: 175px;
+    }
+    .button
+    {
+        margin-left: 29%;
+    }
+    .buttonsavoirplus
+    {
+        margin-left: 128px;
+    }
+}
+
+
+@media screen and (min-width :768px) and (max-width :800px)
+{
+    .logo
+    {
+        margin-left: 345px;
+        max-height: 83px;
+    }
+    .button
+    {
+        margin-left: 39%;
+    }
+}
+
+/*Tablette*/
+
+@media screen and (min-width :768px) and (max-width :1440px)
+{
+    .buttonsavoirplus
+    {
+        margin-left: 230px;
+        margin-top: 65px;
+    }
+
+    .button
+    {
+        margin-left: 39%;
+    }
+}
+
+
+@media screen and (min-width :768px) and (max-width :800px)
+{
+    .bars
+    {
+       font-size: 24px;
+       margin-top: 18px;
+    }
+
+    .fond {
+        padding-bottom: 24px;
+        padding-top: 24px;
+    }
+}
+
+@media screen and (min-width :768px) and (max-width :1440px)
+{
+
+.ensemblerubrique_ideesetconseils {
+   display: flex;
+}
+
+p.titre_rubrique.idees_et_conseils {
+    font-size: 2.5em;
+    margin-top: 78px;
+}
+
+.rubrique_idees_conseils {
+    width: 100%;
+    padding-bottom: 113px;
+    margin-top: 10px;
+}
+
+p.titre_rubrique.idees_et_conseils {
+    font-size: 2.5em;
+    margin-top: 78px;
+}
+
+.buttonsavoirplus {
+    margin-left: 233px;
+    margin-top: 50px;
+}
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+}
+
+@media screen and (min-width :768px) and (max-width :800px)
+{
+    .bouton_card_1 {
+margin-top: 19px;
+
+}
+
+.bouton_card_3 {
+    margin-top: 2px;
+    
+    }
+
+    .card {
+ 
+        max-width: 232px;
+       
+       }
+
+       #nav-gauche {
+        top:56%;
+        
+        }
+
+        #nav-droite {
+            top:56%;
+            
+            }
+}
+
+@media screen and (min-width :768px) and (max-width :1440px)
+{
+    .icone_fleur {
+width: 10%;
+
+}
+}
+
+@media screen and (min-width :1440px) and (max-width :1600px)
+{
+    .icone_fleur {
+width: 5%;
+
+}
+}
+
+/*PC*/
+
+@media screen and (min-width :1024px) and (max-width :1140px)
+{
+    .logo {
+top:56%;
+
+}
+
+#nav-droite {
+    top:56%;
+    
+    }
+
+    #nav-gauche {
+        top:56%;
+        
+        }
+}
+
+
+@media screen and (min-width :1024px) and (max-width :2000px)
+{
+    .bouton_card_1 {
+margin-top: 40px;
+
+}
+.bouton_card_3 {
+    margin-top: 21px;
+    
+    }
+
+    .button {
+        margin-left: 42%;
+        
+        }
+}
+
+@media screen and (min-width :1440px) and (max-width :2000px)
+{
+    #nav-droite {
+        top:52%;
+        
+        }
+    
+        #nav-gauche {
+            top:52%;
+            
+            }
+.button {
+    margin-left: 44%;
+}
+
+}
+
+@media screen and (min-width :1441px)
+{
+   .ensemblerubrique_ideesetconseils {
+
+        display: flex;
+        }
+    
+        p.titre_rubrique.idees_et_conseils {
+            font-size: 2.5em;
+            margin-top: 78px;
+        }
+        
+        .rubrique_idees_conseils {
+            width: 100%;
+            padding-bottom: 113px;
+            margin-top: 10px;
+        }
+        
+        p.titre_rubrique.idees_et_conseils {
+            font-size: 2.5em;
+            margin-top: 78px;
+        }
+        
+        .buttonsavoirplus {
+            margin-left: 233px;
+            margin-top: 50px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .icone_fleur {
+       
+          width:4%;
+        }
+
+        .button {
+       
+      margin-left: 46%;
+          }
+
+          .bars {
+            visibility: hidden;  
+            }
+
+            #myLinks {
+    visibility: visible;
+    margin-left: 44%;
+
+            }
+
+}
